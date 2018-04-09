@@ -1191,6 +1191,7 @@ module Shumway.GFX.Canvas2D {
 			let surface = <Canvas2DSurfaceRegion>(Canvas2DRenderer._surfaceCache.allocate(w, h,
 				excludeSurface));
 			if (!release) {
+				surface.resetTransform();
 				surface.fill("#FF4981");
 			}
 			// let color = "rgba(" + (Math.random() * 255 | 0) + ", " + (Math.random() * 255 | 0) + ", " + (Math.random() * 255 | 0) + ", 1)"
