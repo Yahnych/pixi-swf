@@ -379,7 +379,7 @@ module Shumway.GFX.Canvas2D {
 						copyContext = sourceContext;
 						sourceContext = _cc;
 						sx = dx;
-						sy = dx;
+						sy = dy;
 						dx = _sx;
 						dy = _sy;
 					}
